@@ -28,14 +28,17 @@ maintainers = [
 ]
 
 dependencies = [
-    "colpali-engine>=0.3.4,<0.4.0",
+    "colpali-engine @ git+https://github.com/illuin-tech/colpali",
     "ml-dtypes",
     "mteb==1.6.35",
     "ninja",
     "pdf2image",
     "srsly",
     "torch",
-    "transformers>=4.42.0",
+    "flash-attn",
+    "accelerate",
+    "triton",
+    "transformers>4.45.0",
 ]
 
 [project.optional-dependencies]
